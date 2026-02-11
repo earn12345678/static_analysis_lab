@@ -18,7 +18,7 @@ class Invoice:
     coupon: Optional[str]
     items: List[LineItem]
 
-class InvoiceServices:
+class InvoiceService:
     def __init__(self) -> None:
         self._coupon_rate: Dict[str, float] = {
             "WELCOME10": 0.10,
